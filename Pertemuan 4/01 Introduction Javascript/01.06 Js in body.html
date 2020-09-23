@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introduction</title>
+        <style>
+            .Makered{
+                color: red;
+            }
+            .hide{
+                visibility: hidden;
+            }
+            .show{
+                visibility: visible;
+            }
+        </style>
+    
+    </head>
+
+    <body>
+        <button type="button" onclick='changeLine1Style()''>Go</button>
+        <p id="cLine1">Lorem</p>
+
+        <br />
+
+        <button type="button" onclick='ChangeStyle("cLine2","hide")'>hide this</button>
+        <button type="button" onclick='ChangeStyle("cLine2","show")'>show this</button>
+        <p id="cLine2">Lorem</p>
+        <p id="cLIne2">Lorem</p>
+
+        <script>
+        
+            function changeLine1Style(){
+                document.getElementById("cLine1").className ="Makered";
+            }
+            function ChangeStyle(id, classname){
+                document.getElementById(id).className = classname;
+            }
+        </script>
+        
+    </body>
+</html>

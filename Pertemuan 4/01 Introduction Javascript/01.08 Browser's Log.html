@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introduction</title>
+        <style>
+            .Makered{
+                color: red;
+            }
+            .hide{
+                visibility: hidden;
+            }
+            .show{
+                visibility: visible;
+            }
+        </style>
+        
+        <script>
+            function ChangeStyle(pId, pClassName){
+                console.log(pId);
+                console.log(pClassName);
+                document.getElementById(pId).className = pClassName;
+            }   
+        </script>
+    </head>
+
+    <body>
+        <button type="button" onclick='ChangeStyle("cLine1","Makered")'>Go</button>
+        <p id="cLine1">Lorem</p>
+    </body>

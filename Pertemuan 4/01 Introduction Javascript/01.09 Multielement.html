@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introduction</title>
+        <style>
+            .Makered{
+                color: red;
+            }
+            .hide{
+                visibility: hidden;
+            }
+            .show{
+                visibility: visible;
+            }
+        </style>
+        
+        <script>
+            function ChangeAll(str){
+                document.getElementById("cLine1").innerHTML = str;
+                document.getElementById("cLine2").innerHTML = str;
+                document.getElementById("cLine1").innerHTML = "Makered";
+                document.getElementById("cLine2").innerHTML = "Makered";
+            }   
+        </script>
+    </head>
+
+    <body>
+        <p id="cLine1">Lorem</p>
+
+        <br>
+
+        <p id="cLine2">Lorem</p>
+
+        <br>
+
+        <button type="button" onclick='ChangeAll("Hello Hai")'>Change All</button>
+    </body>
